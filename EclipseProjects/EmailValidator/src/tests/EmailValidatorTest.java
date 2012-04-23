@@ -26,6 +26,8 @@ public class EmailValidatorTest {
 		assertFalse(emailValidator.validate("christoph@herbst@mail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph.herbst.@mail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
+		
+		
 	}
 
 }
