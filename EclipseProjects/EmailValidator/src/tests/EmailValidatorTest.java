@@ -20,17 +20,15 @@ public class EmailValidatorTest {
 	@Test
 	public void testValidate() {
 		assertTrue(emailValidator.validate("christoph.herbst@mail.tu-berlin.de"));
+		assertTrue(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
 		assertTrue(emailValidator.validate("rb.magnus@mailbox.tu-berlin.de"));
+		assertTrue(emailValidator.validate("thamag@cs.tu-berlin.de"));
 		assertFalse(emailValidator.validate(""));
 		assertFalse(emailValidator.validate(null));
 		assertFalse(emailValidator.validate("christoph.herbstmail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph@herbst@mail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph.herbst.@mail.tu-berlin.de"));
-		assertFalse(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
-		assertFalse(emailValidator.validate("thamag@cs.tu-berlin.de"));
 		assertTrue(emailValidator.validate("ahmadnawid.mz@gmail.com"));
-		
-		
 	}
 
 }
