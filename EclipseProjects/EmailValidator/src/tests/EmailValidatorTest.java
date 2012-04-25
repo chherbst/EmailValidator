@@ -31,15 +31,7 @@ public class EmailValidatorTest {
 		assertTrue(emailValidator.validate("ashraf.a.tanin@mailbox.tu-berlin.de"));
 		assertFalse(emailValidator.validate("ashraf.tanin.yahoo.com"));
 		assertTrue(emailValidator.validate("ahmadnawid.mz@gmail.com"));
-<<<<<<< HEAD
-<<<<<<< HEAD
 		assertFalse(emailValidator.validate("wazir@ahmadzai@gmail.com"));
-		
-		
-=======
-=======
->>>>>>> 5597a5502d93db3a4f53d9eba79231881ece998e
->>>>>>> b8e561062912a68849feebbb749c45371d6c8968
 	}
 
 }
