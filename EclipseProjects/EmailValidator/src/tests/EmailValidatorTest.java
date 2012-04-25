@@ -28,10 +28,10 @@ public class EmailValidatorTest {
 		assertFalse(emailValidator.validate("christoph.herbstmail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph@herbst@mail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph.herbst.@mail.tu-berlin.de"));
-<<<<<<< HEAD
+//<<<<<<< HEAD
 		assertFalse(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
 		assertFalse(emailValidator.validate("walida.fayez@mailbox.tu-berlin.de"));
-=======
+//=======
 		assertTrue(emailValidator.validate("ashraf.a.tanin@mailbox.tu-berlin.de"));
 		assertFalse(emailValidator.validate("ashraf.tanin.yahoo.com"));
 		assertTrue(emailValidator.validate("ahmadnawid.mz@gmail.com"));
@@ -40,7 +40,10 @@ public class EmailValidatorTest {
 		assertFalse(emailValidator.validate("naseri@@mailbox.tu-berlin.de"));
 		assertTrue(emailValidator.validate("naseri@mailbox.tu-berlin.de"));
 		assertTrue(emailValidator.validate("walida.fayez@mailbox.tu-berlin.de"));
->>>>>>> 26c942419cc0fa4634391479018cb98cf6474794
+		//*******************************
+		assertTrue(emailValidator.validate("hamid_khanzai@yahoo.com"));
+		assertFalse(emailValidator.validate("hamid_khanzai@mailbox.tu-berlin.de"));
+//>>>>>>> 26c942419cc0fa4634391479018cb98cf6474794
 	}
 
 }
