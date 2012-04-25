@@ -20,6 +20,9 @@ public class EmailValidatorTest {
 	@Test
 	public void testValidate() {
 		assertTrue(emailValidator.validate("christoph.herbst@mail.tu-berlin.de"));
+		assertTrue(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
+		assertTrue(emailValidator.validate("rb.magnus@mailbox.tu-berlin.de"));
+		assertTrue(emailValidator.validate("thamag@cs.tu-berlin.de"));
 		assertFalse(emailValidator.validate(""));
 		assertFalse(emailValidator.validate(null));
 		assertFalse(emailValidator.validate("christoph.herbstmail.tu-berlin.de"));
@@ -27,6 +30,8 @@ public class EmailValidatorTest {
 		assertFalse(emailValidator.validate("christoph.herbst.@mail.tu-berlin.de"));
 		assertTrue(emailValidator.validate("ashraf.a.tanin@mailbox.tu-berlin.de"));
 		assertFalse(emailValidator.validate("ashraf.tanin.yahoo.com"));
+		assertTrue(emailValidator.validate("ahmadnawid.mz@gmail.com"));
+>>>>>>> b8e561062912a68849feebbb749c45371d6c8968
 	}
 
 }
