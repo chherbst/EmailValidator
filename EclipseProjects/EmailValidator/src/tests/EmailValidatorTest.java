@@ -20,13 +20,27 @@ public class EmailValidatorTest {
 	@Test
 	public void testValidate() {
 		assertTrue(emailValidator.validate("christoph.herbst@mail.tu-berlin.de"));
+		assertTrue(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
+		assertTrue(emailValidator.validate("rb.magnus@mailbox.tu-berlin.de"));
+		assertTrue(emailValidator.validate("thamag@cs.tu-berlin.de"));
 		assertFalse(emailValidator.validate(""));
 		assertFalse(emailValidator.validate(null));
 		assertFalse(emailValidator.validate("christoph.herbstmail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph@herbst@mail.tu-berlin.de"));
 		assertFalse(emailValidator.validate("christoph.herbst.@mail.tu-berlin.de"));
+<<<<<<< HEAD
 		assertFalse(emailValidator.validate("chrherbst@cs.tu-berlin.de"));
 		assertFalse(emailValidator.validate("walida.fayez@mailbox.tu-berlin.de"));
+=======
+		assertTrue(emailValidator.validate("ashraf.a.tanin@mailbox.tu-berlin.de"));
+		assertFalse(emailValidator.validate("ashraf.tanin.yahoo.com"));
+		assertTrue(emailValidator.validate("ahmadnawid.mz@gmail.com"));
+		assertFalse(emailValidator.validate("wazir@ahmadzai@gmail.com"));
+				assertFalse(emailValidator.validate("asgharzada85@yahoo.com"));
+		assertFalse(emailValidator.validate("naseri@@mailbox.tu-berlin.de"));
+		assertTrue(emailValidator.validate("naseri@mailbox.tu-berlin.de"));
+		assertTrue(emailValidator.validate("walida.fayez@mailbox.tu-berlin.de"));
+>>>>>>> 26c942419cc0fa4634391479018cb98cf6474794
 	}
 
 }
