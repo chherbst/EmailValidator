@@ -59,7 +59,6 @@ public class EmailValidatorTest {
 		assertTrue(emailValidator.validate("test5@test.com"));
 		assertTrue(emailValidator.validate("test2@test.com"));
 		assertTrue(emailValidator.validate("testbranch@test.com"));
-		assertTrue(emailValidator.validate("testbranch@test.com"));
 	}
 
 }
